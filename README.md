@@ -67,8 +67,22 @@ project-root/
 
 ```
 
+## 🔄 CI/CD Integration
+
+Tests run automatically on:
+- Every push to the main branch
+- Every pull request targeting the main branch
+
+The GitHub Actions workflow:
+1. Sets up the test environment
+2. Runs all tests
+3. Uploads the test results as an artifact
+
+You can take a look at the runs [here](https://github.com/Bryn1roll/qsystems-test/actions/) 
+
 
 ## 📚 Resources
 
 - [Playwright Documentation](https://playwright.dev/docs/intro)
 - [Test Configuration Guide](https://playwright.dev/docs/test-configuration)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
