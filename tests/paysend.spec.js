@@ -7,6 +7,8 @@
 
 import { test, expect } from '@playwright/test';
 import { exchangePage } from '../pageobject/exchangepage';
+require('dotenv').config(); // для загрузки переменных окружения из .env файла
+
 
 test('euro-to-gbp', async ({ page }) => {
   const exchange = new exchangePage(page);
